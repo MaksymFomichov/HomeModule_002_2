@@ -18,7 +18,7 @@ public class Main2 {
             System.out.println("Квартиры с номером " + flat + " нет в этом доме!");
         } else {
             int realEntrance = (flat - 1) / flatOnEntrance + 1;
-            int realFloor = (flat - flatOnEntrance * (realEntrance - 1) - 1) / 4 + 1;
+            int realFloor = (flat - flatOnEntrance * (realEntrance - 1) - 1) / flatOnFloor + 1;
             System.out.println("Квартира расположена на " + realFloor + " этаже " + realEntrance + " подьезда");
         }
         scanner.close();
