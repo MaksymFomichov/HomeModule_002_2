@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  * Created by mfomi on 29.06.2017.
  */
-public class Main {
+public class Main1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int data[] = new int[4];
