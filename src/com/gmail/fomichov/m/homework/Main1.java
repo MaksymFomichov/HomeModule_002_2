@@ -16,5 +16,6 @@ public class Main1 {
         }
         Arrays.sort(data);
         System.out.println("Максимально введенное число: " + data[3]);
+        scanner.close();
     }
 }
