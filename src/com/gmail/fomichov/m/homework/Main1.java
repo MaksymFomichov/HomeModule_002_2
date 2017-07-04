@@ -10,9 +10,20 @@ public class Main1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int data[] = new int[4];
+        Scanner sc = new Scanner(System.in);
         for (int i = 0; i < data.length; i++) {
-            System.out.println("Введите " + (i + 1) + " число:");
-            data[i] = scanner.nextInt();
+            while (true) {
+                try {
+                    System.out.println("Введите " + (i + 1) + " целое число:");
+                    data[i] = sc.nextInt();
+                    sc.nextLine();
+                    break;
+                } catch (Exception e) {
+                    System.out.println("Введено не число!!!");
+                    sc.nextLine();
+                }
+            }
+
         }
         Arrays.sort(data);
         System.out.println("Максимально введенное число: " + data[3]);
