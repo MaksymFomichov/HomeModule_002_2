@@ -8,7 +8,6 @@ import java.util.Scanner;
  */
 public class Main1 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         int data[] = new int[4];
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < data.length; i++) {
@@ -26,7 +25,9 @@ public class Main1 {
 
         }
         Arrays.sort(data);
-        System.out.println("Максимально введенное число: " + data[3]);
-        scanner.close();
+        System.out.println("Максимально введенное число: " + data[data.length - 1]);
+        sc.close();
+        System.out.println(Arrays.toString(data));
+
     }
 }
